@@ -1,0 +1,12 @@
+NSS_USRFILES_PRIVATE_2.0 {
+  global:
+    _nss_usrfiles_endgrent; _nss_usrfiles_endpwent; _nss_usrfiles_endspent;
+    _nss_usrfiles_getgrent_r; _nss_usrfiles_getgrgid_r; _nss_usrfiles_getgrnam_r;
+    _nss_usrfiles_getpwent_r; _nss_usrfiles_getpwnam_r; _nss_usrfiles_getpwuid_r;
+    _nss_usrfiles_getspent_r; _nss_usrfiles_getspnam_r;
+    _nss_usrfiles_setgrent; _nss_usrfiles_setpwent; _nss_usrfiles_setspent;
+    _nss_usrfiles_initgroups_dyn;
+
+  local:
+    *;
+};
