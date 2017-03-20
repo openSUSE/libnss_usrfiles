@@ -15,7 +15,7 @@ AM_CPPFLAGS = -I$(srcdir)
 
 lib_LTLIBRARIES = libnss_usrfiles.la
 
-noinst_HEADERS = bits/libc-lock.h nsswitch.h compat.h kernel-features.h
+noinst_HEADERS = libc-lock.h nsswitch.h compat.h kernel-features.h
 check_PROGRAMS = nss_loader-test
 nss_loader_test_LDADD = -ldl
 
