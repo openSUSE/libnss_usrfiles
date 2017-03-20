@@ -1,8 +1,0 @@
-
-See the file COPYING for copying restrictions.
-
-This package contains the NSS usrfiles plugin for glibc.
-
-This code is based on the libnss_files.so plugin from glibc.
-It was modified to only provide the passwd and group functions
-and to search the passwd and group files in /usr/etc and not /etc.
