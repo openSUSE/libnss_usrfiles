@@ -5,7 +5,7 @@ This is a NSS module which can read user information from files
 in the same format as `/etc/passwd` and `/etc/group` stored in 
 the alternate location `/usr/etc`
 
-As of version 2.25 the following files we be read by nss_usrfiles:
+As of version 2.25 the following files will be read by nss_usrfiles:
 
 - `/usr/etc/group`
 - `/usr/etc/passwd`
@@ -23,8 +23,8 @@ List the module the `/etc/nsswitch.conf` configuration file.
 For example:
 
 ```
-    passwd: files altfiles
-    group:  files altfiles
+    passwd: files usrfiles
+    group:  files usrfiles
 
     # Other entries follow...
 ```
