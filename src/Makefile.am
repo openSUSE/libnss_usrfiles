@@ -15,7 +15,7 @@ AM_CPPFLAGS = -I$(srcdir)
 
 lib_LTLIBRARIES = libnss_usrfiles.la
 
-noinst_HEADERS = libc-lock.h nsswitch.h compat.h kernel-features.h
+noinst_HEADERS = libc-lock.h nsswitch.h compat.h kernel-features.h ether.h
 check_PROGRAMS = nss_loader-test
 nss_loader_test_LDADD = -ldl
 
@@ -24,4 +24,5 @@ TESTS = $(check_PROGRAMS)
 libnss_usrfiles_la_LDFLAGS = -version-info 2:0:0 \
 	-Wl,--version-script=$(srcdir)/libnss_usrfiles.map
 libnss_usrfiles_la_SOURCES = files-grp.c files-initgroups.c files-pwd.c \
-	files-spwd.c
+	files-spwd.c files-alias.c files-ethers.c files-proto.c \
+	files-rpc.c files-service.c parse-pwd.c parse-grp.c parse-spwd.c

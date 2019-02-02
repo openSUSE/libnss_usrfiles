@@ -1,10 +1,56 @@
 NSS_USRFILES_PRIVATE_2.0 {
   global:
-    _nss_usrfiles_endgrent; _nss_usrfiles_endpwent; _nss_usrfiles_endspent;
-    _nss_usrfiles_getgrent_r; _nss_usrfiles_getgrgid_r; _nss_usrfiles_getgrnam_r;
-    _nss_usrfiles_getpwent_r; _nss_usrfiles_getpwnam_r; _nss_usrfiles_getpwuid_r;
-    _nss_usrfiles_getspent_r; _nss_usrfiles_getspnam_r;
-    _nss_usrfiles_setgrent; _nss_usrfiles_setpwent; _nss_usrfiles_setspent;
+    _nss_usrfiles_setaliasent;
+    _nss_usrfiles_endaliasent;
+    _nss_usrfiles_getaliasbyname_r;
+    _nss_usrfiles_getaliasent_r;
+
+    _nss_usrfiles_setetherent;
+    _nss_usrfiles_endetherent;
+    _nss_usrfiles_getetherent_r;
+    _nss_usrfiles_gethostton_r;
+    _nss_usrfiles_getntohost_r;
+
+    _nss_usrfiles_setgrent;
+    _nss_usrfiles_endgrent;
+    _nss_usrfiles_getgrent_r;
+    _nss_usrfiles_getgrgid_r;
+    _nss_usrfiles_getgrnam_r;
+
+    _nss_usrfiles_setprotoent;
+    _nss_usrfiles_endprotoent;
+    _nss_usrfiles_getprotobyname_r;
+    _nss_usrfiles_getprotobynumber_r;
+    _nss_usrfiles_getprotoent_r;
+
+    _nss_usrfiles_setpwent;
+    _nss_usrfiles_endpwent;
+    _nss_usrfiles_getpwent_r;
+    _nss_usrfiles_getpwnam_r;
+    _nss_usrfiles_getpwuid_r;
+
+    _nss_usrfiles_setrpcent;
+    _nss_usrfiles_endrpcent;
+    _nss_usrfiles_getrpcbyname_r;
+    _nss_usrfiles_getrpcbynumber_r;
+    _nss_usrfiles_getrpcent_r;
+
+    _nss_usrfiles_setservent;
+    _nss_usrfiles_endservent;
+    _nss_usrfiles_getservbyname_r;
+    _nss_usrfiles_getservbyport_r;
+    _nss_usrfiles_getservent_r;
+
+    _nss_usrfiles_setspent;
+    _nss_usrfiles_endspent;
+    _nss_usrfiles_getspent_r;
+    _nss_usrfiles_getspnam_r;
+
+    _nss_usrfiles_setsgent;
+    _nss_usrfiles_endsgent;
+    _nss_usrfiles_getsgent_r;
+    _nss_usrfiles_getsgnam_r;
+
     _nss_usrfiles_initgroups_dyn;
 
   local:
