@@ -37,11 +37,6 @@ src/nss_loader-test.log
 src/nss_loader-test.trs
 src/test-suite.log
 test-driver
-src/files-grp.c
-src/files-initgroups.c
-src/files-parse.c
-src/files-pwd.c
-src/files-spwd.c
-src/files-XXX.c
 libnss_usrfiles-*.tar.bz2
 libnss_usrfiles-*.tar.gz
+libnss_usrfiles-*.tar.xz
