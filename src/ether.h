@@ -3,9 +3,6 @@
 
 # ifndef _ISOMAC
 
-
-
-
 /* Because the `ethers' lookup does not fit so well in the scheme we
    define a dummy struct here which helps us to use the available
    functions.  */
@@ -14,12 +11,6 @@ struct etherent
   const char *e_name;
   struct ether_addr e_addr;
 };
-
-struct parser_data;
-extern int _nss_files_parse_etherent (char *line, struct etherent *result,
-				      struct parser_data *data,
-				      size_t datalen, int *errnop);
-
 
 #define DECLARE_NSS_PROTOTYPES(service)					      \
 extern enum nss_status _nss_ ## service ## _setetherent (int __stayopen);     \
