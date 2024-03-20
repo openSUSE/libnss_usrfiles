@@ -1,5 +1,5 @@
 dnl Process this file with autoconf to produce a configure script.
-AC_INIT(libnss_usrfiles, 2.27)
+AC_INIT(libnss_usrfiles, 2.27.1)
 AM_INIT_AUTOMAKE
 AC_CONFIG_SRCDIR([src/files-pwd.c])
 AM_CONFIG_HEADER(config.h)

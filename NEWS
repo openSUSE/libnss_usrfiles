@@ -1,5 +1,8 @@
 libnss_usrfiles NEWS -- history of user-visible changes.
 
+Version 2.27.1
+* Cleanup prototypes
+
 Version 2.27
 * Update to glibc 2.27 code
 * Add support for alias, ethers, protocols, rpc and service
