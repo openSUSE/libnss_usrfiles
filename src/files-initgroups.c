@@ -26,6 +26,10 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
+extern int
+_nss_usrfiles_parse_grent (char *line, struct group *result,
+			   void *data, size_t datalen, int *errnop);
+
 enum nss_status
 _nss_usrfiles_initgroups_dyn (const char *user, gid_t group, long int *start,
 			   long int *size, gid_t **groupsp, long int limit,
